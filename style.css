@@ -1,31 +1,64 @@
 body {
- padding: 50px;
+  padding: 50px;
+  font-size: 30px;
 }
 
-div {
+.calc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 300px;
-  height: 300px;
-  padding: 30px;
-  border: 1px solid #808080;
-  background: #efefef;
-  border-radius: 15px;
-  text-align: center;
+  background: black;
+  padding: 30px 20px 20px;
+  border-radius: 10px
 }
 
-h1 {
-  margin-top: 40px;
-  margin-bottom: 100px;
-  letter-spacing: 1px;
-}
-
-button {
-  user-select: none;
-  background: #fff;
+#result {
+  width: 280px;
+  background: darkgray;
+  color: white;
   border-radius: 5px;
-  border: 1px solid #808080;
-  padding: 5px 10px;
+  padding: 10px;
+  text-align: end;
+  font-size: 30px;
+  border: none;
 }
 
-button + button {
-  margin-left: 10px;
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.buttons div {
+  cursor: pointer;
+  width: 15%;
+  background: white;
+  text-align: center;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  user-select: none;
+  box-shadow: 0 5px #dcdcdc;
+}
+
+.buttons div:active {
+  transform: translateY(5px);
+  box-shadow: none;
+}
+
+.btn.method {
+  background: rgb(160, 30, 30);
+  color: #fff;
+}
+
+#dot {
+  background: #fff;
+  color: black;
+}
+
+#all-clear, #equal {
+  width: 120px ;
 }

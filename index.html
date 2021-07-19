@@ -4,17 +4,33 @@
   <meta charset="utf-8">
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
-  <title>ストップウォッチ</title>
+  <title>電卓</title>
 </head>
 
 <body>
-  <div>
-    <h3>ストップウォッチ</h3>
-    <h1 id="timer">0:0:0:0</h1>
-    <button id="start">スタート</button>
-    <button id="stop">ストップ</button>
-    <button id="reset">リセット</button>
-    <script src="main.js"></script>
+  <div class="calc">
+    <input type="text" id="result" value="0">
+    <div class="buttons">
+      <div class="btn number">7</div>
+      <div class="btn number">8</div>
+      <div class="btn number">9</div>
+      <div class="btn method">+</div>
+      <div class="btn number">4</div>
+      <div class="btn number">5</div>
+      <div class="btn number">6</div>
+      <div class="btn method">-</div>
+      <div class="btn number">1</div>
+      <div class="btn number">2</div>
+      <div class="btn number">3</div>
+      <div class="btn method">*</div>
+      <div class="btn number inactive" id="zero">0</div>
+      <div class="btn number inactive" id="zerozero">00</div>
+      <div class="btn method" id="dot">.</div>
+      <div class="btn method">/</div>
+      <div id="all-clear">AC</div>
+      <div class="inactive" id="equal">=</div>
+    </div>
   </div>
+  <script src="main.js"></script>
 </body>
 </html>
